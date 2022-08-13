@@ -1,5 +1,11 @@
 ### Verified
-GET http://localhost:8000/verified/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZjU5ZDc3NTgwMTU3N2Q1OWU5MjM2OCIsImlhdCI6MTY2MDI2NDYwM30.FPUD3OcNA_WlDEnx7ZQpse_PRKIAX-t0V3jE8vTSTRc
+POST http://localhost:8000/verified
+Content-Type: application/json
+
+{
+    "id": "62f59d775801577d59e92368",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZjU5ZDc3NTgwMTU3N2Q1OWU5MjM2OCIsImlhdCI6MTY2MDI5OTU5N30.2n90alIQMtTKjauI8A5rGPvSRtitz1CuWrz-l29jZlI"
+}
 
 ###
 POST http://localhost:8000/verified/
@@ -29,20 +35,33 @@ Content-Type: application/json
 }
 
 ### User
-GET http://localhost:8000/users/62f59d775801577d59e92368/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZjU5ZDc3NTgwMTU3N2Q1OWU5MjM2OCIsImlhdCI6MTY2MDI2NDYwM30.FPUD3OcNA_WlDEnx7ZQpse_PRKIAX-t0V3jE8vTSTRc
+POST http://localhost:8000/users/62f62adc01f7ec7151139b8e
+Content-Type: application/json
+
+{
+    "id": "62f62adc01f7ec7151139b8e",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZjYyYWRjMDFmN2VjNzE1MTEzOWI4ZSIsImlhdCI6MTY2MDMwMTc4OX0.A1BiOmdxAW_p9NTEEtDRjIOoKhQG-AfHuo2Dr90JX-M"
+}
 
 ### 
 GET http://localhost:8000/users
 
 ###
-PUT http://localhost:8000/users/62eb3008bd9265a376a1528f
+PUT http://localhost:8000/users/62f62adc01f7ec7151139b8e
 Content-Type: application/json
 
 {
-    "username": "Ivan Kristiawan",
-    "password": "ivanteens",
-    "isAdmin": false
+    "username": "1234",
+    "password": "123",
+    "id": "62f62adc01f7ec7151139b8e",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZjYyYWRjMDFmN2VjNzE1MTEzOWI4ZSIsImlhdCI6MTY2MDMwMDA4M30.wEKfuIOWpVXCMZDZZARtDCEZ3HMM4-eDVwInFC79000"
 }
 
 ###
-DELETE http://localhost:8000/users/62e906d808f0aee922bc7e5d
+DELETE http://localhost:8000/users/62f62a9901f7ec7151139b87
+Content-Type: application/json
+
+{
+    "id": "62f62a9901f7ec7151139b87",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZjYyYTk5MDFmN2VjNzE1MTEzOWI4NyIsImlhdCI6MTY2MDI5OTk3MH0.Uo613ctbl_4szrktx0XnOz1c_MfCJwg7sFU6Ben2WFg"
+}

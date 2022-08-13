@@ -21,7 +21,7 @@ export const updateUser = async (req, res) => {
       },
       { new: true }
     );
-    res.status(200).json(updateUser);
+    res.status(200).json(updatedUser);
   } catch (error) {
     // Error 400 = Kesalahan dari sisi user
     res.status(400).json({ message: error.message });

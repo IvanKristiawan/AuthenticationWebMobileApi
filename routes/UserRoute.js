@@ -9,11 +9,11 @@ import { verifyUser } from "../utils/verifyToken.js";
 const router = express.Router();
 
 // UPDATE
-router.put("/:id/:token", verifyUser, updateUser);
+router.put("/:id", verifyUser, updateUser);
 // DELETE
-router.delete("/:id/:token", verifyUser, deleteUser);
+router.delete("/:id", verifyUser, deleteUser);
 // GET
-router.get("/:id/:token", verifyUser, getUser);
+router.post("/:id", verifyUser, getUser);
 // GET ALL
 router.get("/", getUsers);
 

@@ -38,7 +38,7 @@ export const login = async (req, res, next) => {
 
     const { password, ...otherDetails } = user._doc;
 
-    res.status(200).json({ details: { ...otherDetails }, token });
+    res.status(200).json({ details: { ...otherDetails, token } });
   } catch (error) {
     // Error 400 = Kesalahan dari sisi user
     res.status(400).json({ message: error.message });
